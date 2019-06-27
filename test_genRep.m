@@ -9,3 +9,6 @@ clc
     population.Chromosome(k).Gene(1,:) = [round(rand()),round(rand())];
     population.Chromosome(k).Fitness = fitnessFunction(population.Chromosome(k).Gene(:));
   end
+
+  
+  [parent1, parent2] = selection(population)
